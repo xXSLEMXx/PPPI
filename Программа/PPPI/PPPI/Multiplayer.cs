@@ -14,5 +14,11 @@ namespace PPPI
         {
             return new string[] { };
         }
+
+        //Создание собственной сессии.
+        public void startSession()
+        {
+
+        }
     }
 }
