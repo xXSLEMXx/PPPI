@@ -20,5 +20,11 @@ namespace PPPI
         {
             return true;
         }
+
+        //Находится ли блок на дне поля.
+        public bool isOnBottom()
+        {
+            return true;
+        }
     }
 }
