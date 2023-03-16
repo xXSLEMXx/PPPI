@@ -14,5 +14,11 @@ namespace PPPI
         {
 
         }
+
+        //Очищает заполненную строку.
+        public void clearLine(int lineNumb)
+        {
+
+        }
     }
 }
