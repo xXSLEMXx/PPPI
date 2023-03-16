@@ -19,5 +19,11 @@ namespace PPPI
         {
 
         }
+
+        //Установка внешнего вида поля.
+        public void SetSkin(byte[] skinData)
+        {
+
+        }
     }
 }
