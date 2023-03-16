@@ -9,6 +9,10 @@ namespace PPPI
     //Класс генерации формы блока.
     internal class GenBlockShape
     {
-        
+        //Генерация формы блока.
+        public Block genShape(Block block)
+        {
+            return block;
+        }
     }
 }
