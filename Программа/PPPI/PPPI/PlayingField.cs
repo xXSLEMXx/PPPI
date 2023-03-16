@@ -11,5 +11,7 @@ namespace PPPI
     {
         public int width;   //Ширина поля.
         public int height;  //Высота поля.
+
+        public Bitmap skin;    //Внешний вид поля.
     }
 }
