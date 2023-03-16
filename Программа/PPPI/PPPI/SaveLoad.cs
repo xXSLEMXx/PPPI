@@ -9,6 +9,10 @@ namespace PPPI
     //Класс сохранения и загрузки прогресса.
     internal class SaveLoad
     {
-        
+        //Сохранение прогресса в файл.
+        public void Save()
+        {
+
+        }
     }
 }
