@@ -9,6 +9,10 @@ namespace PPPI
     //Класс для изменения внешнего вида блоков и игрового поля.
     internal class Skins
     {
-        
+        //Загружает из файла облик для блока.
+        public void setBlockSkin(string path)
+        {
+
+        }
     }
 }
