@@ -33,5 +33,11 @@ namespace PPPI
         {
 
         }
+
+        //Кгода блок оказывается на дне.
+        public void Fallen()
+        {
+
+        }
     }
 }
