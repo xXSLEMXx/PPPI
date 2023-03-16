@@ -14,5 +14,11 @@ namespace PPPI
         {
             return block;
         }
+
+        //Движение блока вправо.
+        public Block moveRight(Block block)
+        {
+            return block;
+        }
     }
 }
