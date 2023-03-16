@@ -15,5 +15,11 @@ namespace PPPI
         public int shape;   //Номер формы блока.
         public Color color; //Цвет блока.
         public Bitmap skin; //Внешний вид блока.
+
+        //Отрисовка блока.
+        public void Draw()
+        {
+
+        }
     }
 }
