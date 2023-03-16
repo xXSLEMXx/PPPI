@@ -16,5 +16,11 @@ namespace PPPI
         {
 
         }
+
+        //Начисление очков за удаление заполненной строки.
+        public void lineCleared()
+        {
+
+        }
     }
 }
