@@ -21,5 +21,11 @@ namespace PPPI
         {
 
         }
+
+        //Изменение внешнего вида блока.
+        public void SetSkin(byte[] skinData)
+        {
+
+        }
     }
 }
