@@ -14,5 +14,11 @@ namespace PPPI
         {
 
         }
+
+        //Загружает из файла облик для игрового поля.
+        public void setPlayingFieldSkin(string path)
+        {
+
+        }
     }
 }
