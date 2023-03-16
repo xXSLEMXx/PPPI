@@ -17,5 +17,11 @@ namespace PPPI
         {
 
         }
+
+        //Отправить письмо в чат.
+        public void sendMessage(string message)
+        {
+
+        }
     }
 }
