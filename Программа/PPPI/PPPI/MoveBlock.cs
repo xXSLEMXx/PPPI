@@ -9,6 +9,10 @@ namespace PPPI
     //Класс для движения блока.
     internal class MoveBlock
     {
-        
+        //Движение блока влево.
+        public Block moveLeft(Block block)
+        {
+            return block;
+        }
     }
 }
