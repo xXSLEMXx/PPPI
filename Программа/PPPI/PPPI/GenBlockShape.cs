@@ -14,5 +14,11 @@ namespace PPPI
         {
             return block;
         }
+
+        //Добавление эллемента блока.
+        public Block addPart(Block block)
+        {
+            return block;
+        }
     }
 }
