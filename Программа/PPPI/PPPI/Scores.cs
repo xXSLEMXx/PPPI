@@ -10,5 +10,11 @@ namespace PPPI
     internal class Scores
     {
         public int score;   //Текущие очки игрока.
+
+        //Начисление очков за достижение блоком дна.
+        public void blockOnBottom()
+        {
+
+        }
     }
 }
