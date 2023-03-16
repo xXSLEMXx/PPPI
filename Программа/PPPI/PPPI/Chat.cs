@@ -10,6 +10,6 @@ namespace PPPI
     //Класс для чата в мультиплеерной сессии.
     internal class Chat
     {
-        
+        public string ip;   //ip текущего сопартийца.
     }
 }
