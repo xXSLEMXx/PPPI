@@ -9,6 +9,7 @@ namespace PPPI
     //Класс для воспроизведения музыки и звуков.
     internal class Sounds
     {
-        
+        public int soundVolume;    //Переменная для текущего уровня громкости звуков.
+        public int musicVolume;    //Переменная для текущего уровня громкости музыки.
     }
 }
