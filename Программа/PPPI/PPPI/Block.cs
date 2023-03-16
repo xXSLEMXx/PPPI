@@ -27,5 +27,11 @@ namespace PPPI
         {
 
         }
+
+        //Сдвиг блока.
+        public void Movement()
+        {
+
+        }
     }
 }
