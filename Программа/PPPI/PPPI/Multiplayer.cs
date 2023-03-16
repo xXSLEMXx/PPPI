@@ -20,5 +20,11 @@ namespace PPPI
         {
 
         }
+
+        //Присоединиться к сессии.
+        public void connectSession(string ip)
+        {
+
+        }
     }
 }
