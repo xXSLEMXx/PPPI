@@ -11,5 +11,11 @@ namespace PPPI
     {
         public int soundVolume;    //Переменная для текущего уровня громкости звуков.
         public int musicVolume;    //Переменная для текущего уровня громкости музыки.
+
+        //Воспроизведение звуковых файлов.
+        public void playSound()
+        {
+
+        }
     }
 }
