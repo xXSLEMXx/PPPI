@@ -9,6 +9,10 @@ namespace PPPI
     //Класс удаляющий заполненные строки.
     internal class ClearLines
     {
-        
+        //Проверяет строчки поля на заполненность.
+        public void checkLines()
+        {
+
+        }
     }
 }
