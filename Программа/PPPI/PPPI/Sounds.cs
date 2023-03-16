@@ -17,5 +17,11 @@ namespace PPPI
         {
 
         }
+
+        //Воспроизведение музыкальных файлов.
+        public void playMusic()
+        {
+
+        }
     }
 }
