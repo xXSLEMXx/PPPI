@@ -9,6 +9,10 @@ namespace PPPI
     //Класс для взаимодействия сущностей с игровым полем.
     internal class Collision
     {
-        
+        //Находится ли блок в пределах игрового поля.
+        public bool isInside()
+        {
+            return true;
+        }
     }
 }
