@@ -9,6 +9,10 @@ namespace PPPI
     //Класс для соединения игроков по сети.
     internal class Multiplayer
     {
-        
+        //Список доступых сессий.
+        public string[] playersList()
+        {
+            return new string[] { };
+        }
     }
 }
