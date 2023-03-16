@@ -9,6 +9,10 @@ namespace PPPI
     //Класс для генерации цвета блока.
     internal class GenBlockColor
     {
-        
+        //Генерация цвета блока.
+        public Block genColor(Block block)
+        {
+            return block;
+        }
     }
 }
