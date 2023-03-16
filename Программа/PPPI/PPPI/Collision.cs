@@ -14,5 +14,11 @@ namespace PPPI
         {
             return true;
         }
+
+        //Возможно ли передвинуть блок.
+        public bool isPosibleMove()
+        {
+            return true;
+        }
     }
 }
