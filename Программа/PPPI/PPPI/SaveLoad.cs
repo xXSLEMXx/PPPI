@@ -14,5 +14,11 @@ namespace PPPI
         {
 
         }
+
+        //Загрузка прогресса из файл.
+        public void Load()
+        {
+
+        }
     }
 }
