@@ -13,5 +13,11 @@ namespace PPPI
         public int height;  //Высота поля.
 
         public Bitmap skin;    //Внешний вид поля.
+
+        //Отрисовка поля.
+        public void Draw()
+        {
+
+        }
     }
 }
