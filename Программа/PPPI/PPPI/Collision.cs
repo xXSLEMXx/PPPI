@@ -26,9 +26,5 @@ namespace PPPI
         {
             return true;
         }
-		public byte[] toByte()
-		{
-
-		} 
     }
 }
