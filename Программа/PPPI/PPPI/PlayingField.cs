@@ -6,21 +6,41 @@ using System.Threading.Tasks;
 
 namespace PPPI
 {
-    //Класс игрового поля.
+    /// <summary>
+    /// Класс игрового поля.
+    /// Задаёт размеры игрового поля и его внешний вид.
+    /// </summary>
     internal class PlayingField
     {
-        public int width;   //Ширина поля.
-        public int height;  //Высота поля.
+        /// <summary>
+        /// Переменная width, имеет тип данных - int и задаёт ширину игрового поля в пикселях. 
+        /// </summary>
+        public int width;
+        /// <summary>
+        /// Переменная height, имеет тип данных - int и задаёт высоту игрового поля в пикселях. 
+        /// </summary>
+        public int height;
+        /// <summary>
+        /// Переменная skin, имеет тип данных - Bitmap и хранит в себе рисунок, являющийся
+        /// отображаемой моделью игрового поля.
+        /// </summary>
+        public Bitmap skin;
 
-        public Bitmap skin;    //Внешний вид поля.
-
-        //Отрисовка поля.
-        public void Draw()
+        /// <summary>
+        /// Метод Draw отвечает за отрисовку игрового поля.
+        /// </summary>
+        /// <param name="pictureBox">Принимаемый объект класса PictureBox, в котором будет отрисовываться игровое поле,
+        /// в соответствии с внешним видом хранящимся в переменной skin.</param>
+        public void Draw(PictureBox pictureBox)
         {
 
         }
 
-        //Установка внешнего вида поля.
+        /// <summary>
+        /// Метод SetSkin отвечает за установку внешнего вида игрового поля.
+        /// </summary>
+        /// <param name="skinData">Принимаемая переменная byte[], в которой храниться массив байт, который будет преобразован в
+        /// Bitmap и записан в переменную skin.</param>
         public void SetSkin(byte[] skinData)
         {
 
