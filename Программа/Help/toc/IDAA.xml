@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="981837e8-ba48-d08e-4468-d0f2b490b3e8.htm">Docs</a>
+    </li>
+    <li>
+      <a href="981837e8-ba48-d08e-4468-d0f2b490b3e8.htm">PPPI</a>
+    </li>
+    <li>
+      <a href="0a3b36ca-6e02-a407-d277-1b5bc6ec6d5a.htm">Block</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="95df6359-7b19-7428-4569-98874ec1d2cc" href="95df6359-7b19-7428-4569-98874ec1d2cc.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="4ba2e7c6-b900-9862-88c9-248b3d701f19" class="has-submenu" href="4ba2e7c6-b900-9862-88c9-248b3d701f19.htm">
+        <span data-tocFile="../toc/IDBAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+    <li>
+      <a id="57a63f65-fae9-2f7a-cba2-efba952fa438" class="has-submenu" href="57a63f65-fae9-2f7a-cba2-efba952fa438.htm">
+        <span data-tocFile="../toc/IDCAA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Fields</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>

@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PPPI</name>
+    </assembly>
+    <members>
+        <member name="T:PPPI.Block">
+            <summary>
+            Класс блока.
+            Задаёт положение блока, его форму и внешний вид.
+            </summary>
+        </member>
+        <member name="F:PPPI.Block.x">
+            <summary>
+            Переменная x, имеет тип данных - int и задаёт положение блока на игровом поле по оси абсцисс в пикселях. 
+            </summary>
+        </member>
+        <member name="F:PPPI.Block.y">
+            <summary>
+            Переменная y, имеет тип данных - int и задаёт положение блока на игровом поле по оси ординат в пикселях. 
+            </summary>
+        </member>
+        <member name="F:PPPI.Block.shape">
+            <summary>
+            Переменная shape, имеет тип данных - int и задаёт номер формы блока. 
+            </summary>
+        </member>
+        <member name="F:PPPI.Block.color">
+            <summary>
+            Переменная color, имеет тип данных - Color и задаёт цвет блока. 
+            </summary>
+        </member>
+        <member name="F:PPPI.Block.skin">
+            <summary>
+            Переменная skin, имеет тип данных - Bitmap и хранит в себе рисунок, являющийся
+            отображаемой моделью блока.
+            </summary>
+        </member>
+        <member name="M:PPPI.Block.Draw(System.Windows.Forms.PictureBox)">
+            <summary>
+            Метод Draw отвечает за отрисовку блока.
+            </summary>
+            <param name="pictureBox">Принимаемый объект класса PictureBox, в котором будет отрисовываться блок,
+            в соответствии с внешним видом хранящимся в переменных skin, color и shape и координатами
+            на игровом поле хранящимися в переменных x и y.</param>
+        </member>
+        <member name="M:PPPI.Block.SetSkin(System.Byte[])">
+            <summary>
+            Метод SetSkin отвечает за установку внешнего вида блока.
+            </summary>
+            <param name="skinData">Принимаемая переменная byte[], в которой храниться массив байт, который будет преобразован в
+            Bitmap и записан в переменную skin.</param>
+        </member>
+        <member name="M:PPPI.Block.Movement(System.Int32,System.Int32)">
+            <summary>
+            Метод Movement отвечает за установку новых координат в переменные x и y.
+            </summary>
+            <param name="newX">Принимаемая переменная int, в котором храниться новое положение блока по оси абсцисс в пикселях.</param>
+            <param name="newY">Принимаемая переменная int, в котором храниться новое положение блока по оси ординат в пикселях.</param>
+        </member>
+        <member name="M:PPPI.Block.Fallen">
+            <summary>
+            Метод Fallen отвечает за остановку блока при достижении им дна или падении на другой упавший блок.
+            </summary>
+        </member>
+        <member name="T:PPPI.Collision">
+            <summary>
+            Класс коллизии.
+            Задаёт взаимодействие блока с другими блоками и игровым полем.
+            </summary>
+        </member>
+        <member name="M:PPPI.Collision.isInside(PPPI.Block,PPPI.PlayingField)">
+            <summary>
+            Метод isInside отвечает за проверку нахождения блока внутри игрового поля.
+            Проверка осуществляется на основании размеров игрового поля и текущих координат проверяемого блока.
+            </summary>
+            <param name="block">Принимаемый объект класса Block, в котором храниться проверяемый блок.</param>
+            <param name="playingField">Принимаемый объект класса PlayingField, в котором храниться игровое поле.</param>
+        </member>
+        <member name="M:PPPI.Collision.isPosibleMove(PPPI.Block,PPPI.PlayingField,System.Int32,System.Int32)">
+            <summary>
+            Метод isPosibleMove отвечает за проверку возможности сдвига блока на новые координаты.
+            Проверка осуществляется на основании размеров игрового поля, текущих и новых координат проверяемого блока.
+            </summary>
+            <param name="block">Принимаемый объект класса Block, в котором храниться проверяемый блок.</param>
+            <param name="playingField">Принимаемый объект класса PlayingField, в котором храниться игровое поле.</param>
+            <param name="newX">Принимаемая переменная int, в котором храниться новое положение блока по оси абсцисс в пикселях.</param>
+            <param name="newY">Принимаемая переменная int, в котором храниться новое положение блока по оси ординат в пикселях.</param>
+        </member>
+        <member name="M:PPPI.Collision.isOnBottom(PPPI.Block,PPPI.PlayingField)">
+            <summary>
+            Метод isOnBottom отвечает за проверку нахождения блока на дне игрового поля или других блоках.
+            Проверка осуществляется на основании размеров игрового поля и текущих координат проверяемого блока.
+            </summary>
+            <param name="block">Принимаемый объект класса Block, в котором храниться проверяемый блок.</param>
+            <param name="playingField">Принимаемый объект класса PlayingField, в котором храниться игровое поле.</param>
+        </member>
+        <member name="F:PPPI.Form1.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PPPI.Form1.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PPPI.Form1.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:PPPI.Form2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PPPI.Form2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PPPI.Form2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:PPPI.Form3.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PPPI.Form3.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PPPI.Form3.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:PPPI.Form4.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PPPI.Form4.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PPPI.Form4.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:PPPI.Form5.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:PPPI.Form5.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:PPPI.Form5.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:PPPI.PlayingField">
+            <summary>
+            Класс игрового поля.
+            Задаёт размеры игрового поля и его внешний вид.
+            </summary>
+        </member>
+        <member name="F:PPPI.PlayingField.width">
+            <summary>
+            Переменная width, имеет тип данных - int и задаёт ширину игрового поля в пикселях. 
+            </summary>
+        </member>
+        <member name="F:PPPI.PlayingField.height">
+            <summary>
+            Переменная height, имеет тип данных - int и задаёт высоту игрового поля в пикселях. 
+            </summary>
+        </member>
+        <member name="F:PPPI.PlayingField.skin">
+            <summary>
+            Переменная skin, имеет тип данных - Bitmap и хранит в себе рисунок, являющийся
+            отображаемой моделью игрового поля.
+            </summary>
+        </member>
+        <member name="M:PPPI.PlayingField.Draw(System.Windows.Forms.PictureBox)">
+            <summary>
+            Метод Draw отвечает за отрисовку игрового поля.
+            </summary>
+            <param name="pictureBox">Принимаемый объект класса PictureBox, в котором будет отрисовываться игровое поле,
+            в соответствии с внешним видом хранящимся в переменной skin.</param>
+        </member>
+        <member name="M:PPPI.PlayingField.SetSkin(System.Byte[])">
+            <summary>
+            Метод SetSkin отвечает за установку внешнего вида игрового поля.
+            </summary>
+            <param name="skinData">Принимаемая переменная byte[], в которой храниться массив байт, который будет преобразован в
+            Bitmap и записан в переменную skin.</param>
+        </member>
+        <member name="M:PPPI.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:PPPI.ApplicationConfiguration">
+            <summary>
+             Bootstrap the application configuration.
+            </summary>
+        </member>
+        <member name="M:PPPI.ApplicationConfiguration.Initialize">
+            <summary>
+             Bootstrap the application as follows:
+             <code>
+             global::System.Windows.Forms.Application.EnableVisualStyles();
+             global::System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+             global::System.Windows.Forms.Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            </code>
+            </summary>
+        </member>
+    </members>
+</doc>

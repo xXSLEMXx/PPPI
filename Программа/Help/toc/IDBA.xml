@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<toc>
+  <breadcrumbs>
+    <li>
+      <a href="981837e8-ba48-d08e-4468-d0f2b490b3e8.htm">Docs</a>
+    </li>
+    <li>
+      <a href="981837e8-ba48-d08e-4468-d0f2b490b3e8.htm">PPPI</a>
+    </li>
+    <li>
+      <a href="57c0589b-fe98-9933-574b-acdaba03ff92.htm">Collision</a>
+    </li>
+  </breadcrumbs>
+  <tocItems>
+    <li>
+      <a id="3fd049a0-d70a-085b-b0f4-30ba79ff3267" href="3fd049a0-d70a-085b-b0f4-30ba79ff3267.htm">Constructor</a>
+    </li>
+    <li>
+      <a id="03c384d6-00a0-fb98-60ef-d88fbf70eaed" class="has-submenu" href="03c384d6-00a0-fb98-60ef-d88fbf70eaed.htm">
+        <span data-tocFile="../toc/IDBBA.xml" class="icon toggle" onclick="ToggleExpandCollapse(this); return false;">
+          <i class="fa fa-angle-right"> </i>
+        </span>Methods</a>
+      <ul class="toc-menu is-hidden"> </ul>
+    </li>
+  </tocItems>
+</toc>
